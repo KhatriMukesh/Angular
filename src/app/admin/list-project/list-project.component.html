@@ -1,0 +1,24 @@
+<app-admin-header></app-admin-header>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Project Id</th>
+            <th>Project Title</th>
+            <th>Description</th>
+            <th>Technology</th>
+            <!--<th>ProjectManagerId</th>-->
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let project of projects">  
+            <td>{{project._id}}</td>
+            <td>{{project.projectTitle}}</td>
+            <td>{{project.description}}</td>
+            <td>{{project.technology}}</td>
+            <tD><button (click)="editproject(project._id)" >Edit </button>| <button >Delete</button></tD> 
+        </tr>   
+    </tbody>
+
+
+</table>

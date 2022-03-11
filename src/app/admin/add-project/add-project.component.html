@@ -1,0 +1,10 @@
+<app-admin-header></app-admin-header>
+
+Project Title : <input type="text" [(ngModel)]="projectTitle" /><br><br>
+Description : <input type="text" [(ngModel)]="description" /><br><br>
+Technology : <input type="text" [(ngModel)]="technology" /><br><br>
+Estimated Hours : <input type="text" [(ngModel)]="estimatedHours" /><br><br>
+Start Date : <input type="date" [(ngModel)]="startDate" /><br><br>
+<!--Project Manager ID : <input type="text" [(ngModel)]="projectManagerID" /><br><br>-->
+<input type="button" value="submit" (click)="saveproject()" />
+<br>
